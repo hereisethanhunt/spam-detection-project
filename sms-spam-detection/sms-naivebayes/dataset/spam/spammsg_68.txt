@@ -1,0 +1,6 @@
+Jobless!,If you loose your job suddenly, what would you do?
+1) Beg
+2) Borrow
+3) Steal
+^1/2/3
+Reply Within 24 hrs to know what ‘Jerry’ & ‘Nick’ did when they lost their job.

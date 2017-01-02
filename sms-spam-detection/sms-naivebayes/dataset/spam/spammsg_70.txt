@@ -1,0 +1,3 @@
+Eco-Friendly,Would you like to save the environment?
+^Yes / No
+Reply within 24hrs to know how to buy wooden products, which do not affect the forest.

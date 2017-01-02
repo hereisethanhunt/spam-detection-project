@@ -1,0 +1,6 @@
+Christmas Destinations,Want to celebrate Christmas at one of the best destinations in the world? Choose a location that suits your budget.
+1) Europe
+2) India
+3) Asia
+^1/2/3
+All your replies to Blyk on Aircel are free.

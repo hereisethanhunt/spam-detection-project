@@ -1,0 +1,6 @@
+Tallest Waterfall,Can you guess the name of the tallest waterfall in India as well as Asia?
+1) Pawa Waterfall
+2) Jog Waterfall
+3) Sultan Garh Waterfall
+^1/ 2/ 3
+Reply within 24 hrs to know the answer.

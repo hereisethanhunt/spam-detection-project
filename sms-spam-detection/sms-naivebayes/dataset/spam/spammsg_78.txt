@@ -1,0 +1,6 @@
+What's In The Picture?,Guess what the museum in the attached picture is for:
+1) Flower pots
+2) Toilets
+3) Handicrafts
+^1/ 2/ 3
+Reply within 24 hrs to know the buzz.

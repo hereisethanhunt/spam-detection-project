@@ -1,0 +1,6 @@
+Soup Recipes,Warm up your winters with one of these nutritious soups! Choose to get the recipe:
+1) Onion Potato Soup
+2) Hot and Sour Soup
+3) Hot Cheese Soup
+^1/ 2/ 3
+Reply within 24 hrs to get step by step instructions.

@@ -1,0 +1,7 @@
+Meet The Characters,Meet the mutants of 'X-Men: First Class'! Choose a character to find out what powers they possess:
+1) Havoc
+2) Mystique
+3) Beast
+4) Banshee
+^1/2/3/4
+Reply to get a video clip.

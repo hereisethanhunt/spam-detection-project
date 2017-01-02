@@ -1,0 +1,3 @@
+Escapade,Love Adventure Sports?
+^Yes/No
+Answer within 24 hours to get a career tip in adventure sports.

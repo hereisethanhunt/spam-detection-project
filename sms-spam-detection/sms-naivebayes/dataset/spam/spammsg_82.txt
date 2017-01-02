@@ -1,0 +1,5 @@
+New Releases,Which movie would you like to watch this Friday?
+1) Hollywood
+2) Bollywood
+^1/2
+Reply within 24 hrs to know about the movies released today.

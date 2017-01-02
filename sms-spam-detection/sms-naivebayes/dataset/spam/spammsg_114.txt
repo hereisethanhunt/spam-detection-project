@@ -1,0 +1,8 @@
+Weekend Getaways...,Weekend getaways! Choose your destination by choosing the part of India you live in… 
+1)	North 
+2)	South 
+3)	East 
+4)	West
+5)	Center
+^1/2/3/4/5
+All your replies to Blyk on Aircel are free.

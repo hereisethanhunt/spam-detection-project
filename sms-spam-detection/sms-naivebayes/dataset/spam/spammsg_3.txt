@@ -1,0 +1,9 @@
+Think Big!,Looking for a unique career path? Choose the relevant one for   
+yourself.
+1) Writer
+2) Hair Stylist
+3) Voice Artiste
+4) Documentary Filmmaker
+5) Flair Bartender
+^1/2/3/4/5
+All your replies to Blyk on Aircel are free.

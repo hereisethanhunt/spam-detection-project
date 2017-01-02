@@ -1,0 +1,6 @@
+Bond Girl?,Which Indian actress you would like to see as Bond Girl?
+1) Bipasha
+2) Kareena
+3) Katrina
+^1/ 2/ 3
+Reply within 24 hrs to know who's the next Bond Girl.

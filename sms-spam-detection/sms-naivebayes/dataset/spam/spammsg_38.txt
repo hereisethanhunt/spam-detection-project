@@ -1,0 +1,6 @@
+Real Name?,Can you guess which Bollywood star's real name is Amit Srivastava?
+1) Amrish Puri
+2) Amitabh Bachchan
+3) Abhay Deol
+^1/2/3
+All interactions with Blyk on Aircel are always free.

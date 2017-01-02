@@ -1,0 +1,7 @@
+Most Acclaimed!,There are many talented Indian artists who have won national and international acclaim! Choose one to know more:
+1) S.H Raza
+2) Tyeb Mehta
+3) Vasudev S Gaitonde
+4) Anjolie Ela Menon
+5) Ram Kumar
+^1/2/3/4/5

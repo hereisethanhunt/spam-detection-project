@@ -1,0 +1,1 @@
+Pay SBIcard dues thru MBS. BILLPAY > ADDBILLER>OPTIONS> ADD> CompanyID = SBICARD >nick name. Consumer detail= card no. Pay in round rupees. Leave BILLID- blank.

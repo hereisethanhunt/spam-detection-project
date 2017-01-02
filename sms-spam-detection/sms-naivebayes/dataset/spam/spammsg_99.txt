@@ -1,0 +1,6 @@
+Android World!,Which Android phone would you like to buy? Choose from the options…
+1) Samsung Galaxy S2
+2) Motorola Atrix
+3) LG Optimus 2X
+^1/2/3
+Reply to know the comparison.

@@ -1,0 +1,6 @@
+The Rockstar!,Which Salman do you like the most? Choose from the options:
+1) Tere Naam
+2) Veer
+3) Dabangg
+^1/2/3
+All your interactions with Blyk on Aircel are free.

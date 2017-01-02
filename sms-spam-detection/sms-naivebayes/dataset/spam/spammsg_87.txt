@@ -1,0 +1,6 @@
+Bizarre!,What do you think this is? (Refer to the picture)
+1)TV
+2) Mobile Phone
+3) Computer
+^1/2/3
+Reply within 24hrs to know more about this bizarre gadget.

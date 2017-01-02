@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" href="{{ url_for('static', filename = 'springboard.png') }}">
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap/css/bootstrap.min.css') }}"></link>
+<script src="{{ url_for('static', filename = 'bootstrap/js/bootstrap.min.js') }}"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+<title>SpamDetection</title>
+</head>
+
+<style type="text/css">
+body{
+	background-image: url("/static/skulls.png");
+}
+* {
+  border-radius: 5px !important;
+}
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+p { color: #049372; font-size: 17px; font-family: "Libre Baskerville", serif; line-height: 20px; text-shadow: 0 1px 1px #89d37c;font-style: italic; padding-top: 8px;}
+h3 { color: #ffffff; font-size: 30px; font-family: "Libre Baskerville", serif; line-height: 20px; text-shadow: 0 1px 1px #049372;font-style: italic; padding-top: 8px;}
+h4 { color: #000000; font-size: 18px; font-family: "Libre Baskerville", serif; line-height: 20px; text-shadow: 0 1px 1px #049372;font-style: italic; padding-top: 8px;}
+#rlprevinput{
+    min-width:500px;
+}
+@media only screen and (max-width: 917px) {
+    
+}
+@media only screen and (max-width: 868px) {
+    
+}
+@media only screen and (max-width: 828px) {
+    #rlprevinput {
+min-width: 500px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #rlprevinput {
+min-width: 650px;
+text-align: center;
+    }
+}
+@media only screen and (max-width: 710px) {
+    #rlprevinput {
+min-width: 600px;
+    }
+}
+@media only screen and (max-width: 665px) {
+    #rlprevinput {
+min-width: 500px;
+    }
+}
+@media only screen and (max-width: 565px) {
+    #rlprevinput {
+min-width: 400px;
+    }
+}
+@media only screen and (max-width: 465px) {
+    #rlprevinput {
+min-width: 300px;
+    }
+}
+@media only screen and (max-width: 365px) {
+    #rlprevinput {
+min-width: 200px;
+    }
+}
+@media only screen and (max-width: 265px) {
+
+    #rlprevinput {
+min-width: 100px;
+    }
+}
+    @media only screen and (max-width: 165px) {
+    #rlprevinput {
+min-width: 100%;
+    }
+}
+hr {
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.well{background-color: #F5F8FA}
+</style>
+
+<body>
+	<div class = "container-fluid">
+		<div class="row well well-sm" style="background-color:#90c695">
+			<div class="col-sm-2">
+				<img class="img-responsive" src="https://www.springboard.com/images/springboard/springboard_logo.c9ce99a3.png" alt="springboard" width="140" height="140">
+			</div>
+			<div class="col-sm-10">
+				<div class="input-group">
+    				<input type="text" min="0" max="5" class="form-control input-md" list="list1" id="rlprevinput" placeholder="Search text">
+    				<datalist id="list1" ></datalist>
+    				<span class="input-group-btn" style="width:0;">
+        				<button class="btn btn-default" type="button" id="searchbtn"> <i class="glyphicon glyphicon-search"></i></button>
+    				</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1">
+			<button type="button" class="btn btn-default" id="displayit">Display Emails</button>
+			</div>
+			<div class="col-lg-1">
+			<button type="button" class="btn btn-default" id="authenticate">Authenticate U</button>
+			</div>
+			<div class="col-lg-1">
+			<button type="button" class="btn btn-default" id="display">Naive-Bayes</button>
+			</div>
+		</div>
+		<br>
+		<hr style="clear:both;"/>
+		<div id="inside" class="inside">
+
+		<!-- <div class="row">
+			<div class="col-lg-2">
+			<div class="well well-lg" id="r1">
+
+			</div>
+			</div>
+			<div class="col-lg-10">
+			<div class="well well-lg" id="h1">
+
+			</div>
+			</div>
+		</div> -->
+
+
+		</div>
+
+	</div>
+
+<script type="text/javascript">
+
+
+var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+	function myFunction(data,htmlid,textid) {
+    	
+    				var divrow=document.createElement("div");
+					divrow.className="row";
+					var divcol1=document.createElement("div");
+					divcol1.className="col-lg-1";
+					var divwell1=document.createElement("div");
+					divwell1.className="well well-lg";
+					divwell1.id=textid;
+					var divcol2=document.createElement("div");
+					divcol2.className="col-lg-11";
+					var divwell2=document.createElement("div");
+					divwell2.className="well well-lg";
+					divwell2.id=htmlid;
+					
+
+					console.log(htmlid);
+					//console.log(data);
+					divrow.appendChild(divcol1);
+					divrow.appendChild(divcol2);
+					divcol1.appendChild(divwell1);
+					divcol2.appendChild(divwell2);
+					//document.getElementById("h0").innerHTML="data";
+
+					document.getElementById("inside").appendChild(divrow);
+					}
+
+
+	var availableTags=["ham","spam"];
+	
+	$("#rlprevinput").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#searchbtn").click();
+    }
+	});	
+    	
+
+	$(document).ready(function () {
+
+		$( "#rlprevinput" ).autocomplete({
+    		maxResults:10,
+      		source: function(request, response) {
+        	var results = $.ui.autocomplete.filter(availableTags, request.term);
+        	response(results.slice(0, this.options.maxResults));
+    		}
+    	});
+
+		$("#display").click(function() {
+        	$.ajax({
+	            type: "GET",
+	            url: $SCRIPT_ROOT + "/display",
+	            contentType: "application/json; charset=utf-8",
+	            data: { echo : "hello" },
+	            success: function(data) {
+	                alert("data");   
+	                for(var i=0;i<data.results.length;i++)
+	                 {
+	                 	document.getElementById("r"+i).innerHTML=data.results[i];
+	                 }
+	            }
+	    	});
+    	});
+
+    	$("#displayit").click(function() {
+    	
+    	var a = document.getElementById("inside");
+    	while(a.hasChildNodes()) {
+    		a.removeChild(a.lastChild);
+    		}
+        	$.ajax({
+	            type: "GET",
+	            url: $SCRIPT_ROOT + "/displayit",
+	            contentType: "application/json; charset=utf-8",
+	            data: { echo : "hello" },
+	            success: function(data) {
+	                
+	                for(var i=0;i<data.results.length;i++)
+
+	                 {
+	                 	myFunction(data.results[i],"h"+i,"r"+i);
+	                 	document.getElementById("h"+i).innerHTML=data.results[i];
+	                 }
+	            }
+	    	});
+    	});
+
+		$("#authenticate").click(function() {
+			$.ajax({
+	            type: "GET",
+	            url: $SCRIPT_ROOT + "/authenticate",
+	            contentType: "application/json; charset=utf-8",
+	            data: { echo : "hello" },
+	            success: function(data) {
+	                // console.log(data)
+	                alert("Authenticated");
+	                
+	            }
+
+	    	});
+	    });
+ 	});
+
+
+/*$(function() {
+    $("#searchbtn").click(function() {
+    	 var a = document.getElementById("newdiv");
+    	 while(a.hasChildNodes()) {
+    	 	a.removeChild(a.lastChild);
+    	 }
+    	 $.ajax({
+ 			url: 'https://hackerearth.0x10.info/api/learning-paths?type=json&query=list_paths',
+ 			type: 'GET',
+ 			dataType: 'json',
+ 			success: function (data, textStatus, xhr) {
+ 				list=data.paths;
+				var searched=document.getElementById("rlprevinput").value;
+				console.log(searched);
+				for(var i=0;i<list.length;i++)
+				{
+					entry = list[i].tags;
+					entryArray = entry.split(",");
+					for(var j=0;j<entryArray.length;j++)
+					{
+						if(entryArray[j]==searched)
+						{
+							myFunction(list[i])
+							break;
+						}
+					}
+				}
+ 			},
+ 			error: function (xhr, textStatus, errorThrown) {
+ 				console.log('Error in Operation');
+ 			}
+ 		});   
+    });
+  });*/
+
+
+</script>
+
+</body>
+</html>

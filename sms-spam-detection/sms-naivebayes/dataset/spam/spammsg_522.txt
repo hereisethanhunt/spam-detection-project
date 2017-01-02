@@ -1,0 +1,1 @@
+Overcome programming challenges for multicore and learn the techniques to scale reliability. Attend Intel session at 3.45 PM at Microsoft Community TechDays

@@ -1,0 +1,6 @@
+Re-Style,Bored of your old shoes? Choose how you want to re-style them:
+1) Paint Art
+2) Funky Laces
+3) Buckles
+^1/2/3 
+Reply to get some re-styling tips.
